@@ -276,12 +276,12 @@ def allSports():
     # Get list of nfl teams
     url = "https://odds.p.rapidapi.com/v1/sports"
 
-    RAPID_API_HOST = os.environ.get('x-rapidapi-host')
-    RAPID_API_KEY = os.environ.get('x-rapidapi-key')
+    RAPID_API_HOST = os.environ.get('x_rapidapi_host')
+    RAPID_API_KEY = os.environ.get('x_rapidapi_key')
 
     headers = {
-    'x-rapidapi-host': os.environ.get(RAPID_API_HOST),
-    'x-rapidapi-key' : os.environ.get(RAPID_API_KEY)
+    'x-rapidapi-host': RAPID_API_HOST,
+    'x-rapidapi-key' : RAPID_API_KEY
     }
 
     response = requests.request("GET", url, headers=headers)
@@ -316,12 +316,12 @@ def nflTeams():
     # Get list of nfl teams
     url = "https://therundown-therundown-v1.p.rapidapi.com/sports/2/teams"
 
-    RAPID_API_HOST = os.environ.get('x-rapidapi-host')
-    RAPID_API_KEY = os.environ.get('x-rapidapi-key')
+    RAPID_API_HOST = os.environ.get('x_rapidapi_host')
+    RAPID_API_KEY = os.environ.get('x_rapidapi_key')
 
     headers = {
-    'x-rapidapi-host': os.environ.get(RAPID_API_HOST),
-    'x-rapidapi-key' : os.environ.get(RAPID_API_KEY)
+    'x-rapidapi-host': RAPID_API_HOST,
+    'x-rapidapi-key' : RAPID_API_KEY
     }
 
     response = requests.request("GET", url, headers=headers)
