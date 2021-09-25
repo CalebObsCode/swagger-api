@@ -7,5 +7,3 @@
 * Live Sport API
 * PostMan
 
-# Swagger 
-[Swagger](httpa://github.com/swagger-api/swagger.png)
